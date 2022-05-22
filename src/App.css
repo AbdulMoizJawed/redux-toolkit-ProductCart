@@ -1,31 +1,7 @@
-.App {
-  text-align: center;
-}
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
 @media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
+  .storeName {
+    animation: App-logo-spin infinite 3s linear;
   }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
-
-.App-link {
-  color: #61dafb;
 }
 
 @keyframes App-logo-spin {
@@ -35,4 +11,118 @@
   to {
     transform: rotate(360deg);
   }
+}
+
+body {
+  background-color: rgb(215, 227, 227);
+}
+.Navbar {
+  display: flex;
+  justify-content: space-around;
+  background-color: white;
+  flex-wrap: wrap;
+}
+.storeName {
+  display: flex;
+  align-items: center;
+}
+.navigation {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.navigation > ul {
+  margin-right: 30px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  list-style-type: none;
+}
+.navigation > ul > Link {
+  margin-right: 30px;
+}
+
+.productContainer {
+  margin-top: 5vh;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  flex-wrap: wrap;
+}
+.productCard {
+  background-color: white;
+  height: 400px;
+  width: 350px;
+  margin: 20px;
+  border-radius: 20px;
+  box-shadow: -11px 13px 17px 3px rgba(145, 145, 145, 0.75);
+  -webkit-box-shadow: -11px 13px 17px 3px rgba(145, 145, 145, 0.75);
+  -moz-box-shadow: -11px 13px 17px 3px rgba(145, 145, 145, 0.75);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.productImage {
+  height: 250px;
+  width: 250px;
+}
+.productCard > button {
+  background-color: rgb(215, 227, 227);
+  border-radius: 5px;
+  border: none;
+}
+.productCard > button:hover{
+  background-color: rgb(188, 197, 197);
+  cursor: pointer;
+}
+.card {
+  background: white;
+  padding: 20px;
+  text-align: center;
+  border-radius: 10px;
+}
+.productsWrapper {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 30px;
+}
+.btn {
+  border: none;
+  outline: none;
+  background: #764abc;
+  padding: 5px 10px;
+  color: #fff;
+  border-radius: 5px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+}
+
+.btn:hover {
+  background: #513282;
+}
+
+.heading {
+  padding: 25px 0;
+}
+.cartCount {
+  font-weight: bold;
+  text-transform: uppercase;
+  margin-left: 40px;
+}
+.navLink {
+  text-decoration: none;
+  color: black;
+  margin-left: 20px;
+}
+
+.cartCard {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background: #fff;
+  margin-bottom: 20px;
+  padding: 14px;
+  border-radius: 5px;
 }
